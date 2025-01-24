@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Update SYSCX profile</title>
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+   <header>
+      <h1>SYSCX</h1>
+      <p>Social media for SYSC students in Carleton University</p>
+   </header>
+   <nav>
+      <table>
+         <tr>
+            <td>
+               <a href="index.html">Home</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="profile.html">Profile</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="register.html">Register</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="logout.html">Log Out</a>
+            </td>
+      </table>
+   </nav>
+
+   <main>
+      <section>
+         <h2>Update Profile information</h2>
+         <form method="post" action="https://ramisabouni.com/sysc4504/process_profile.php">
+            <fieldset>
+               <legend><span>PERSONAL INFORMATION</span></legend>
+               <table>
+                  <tr>
+                     <td>
+                        <label>First name:</label>
+                        <input type="text" placeholder="Ex. John Snow" name="first_name">
+                     </td>
+                     <td>
+                        <label>Last name:</label>
+                        <input type="text" placeholder="Insert last name" name="last_name">
+                     </td>
+                     <td>
+                        <label>DOB:</label>
+                        <input type="date" name="Date_of_Birth">
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <fieldset>
+               <legend><span>ADDRESS</span></legend>
+               <table>
+                  <tr>
+                     <td>
+                        <label>Street number:</label>
+                        <input type="number" id="street-number" name="street_number">
+                     </td>
+                     <td colspan="2">
+                        <label>Street name:</label>
+                        <input type="text" id="street_name" name="street_name">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label>City: </label>
+                        <input type="text" name="city" id="city">
+                     </td>
+                     <td>
+                        <label>Province: </label>
+                        <input type="text" id="provence" name="provence">
+                     </td>
+                     <td>
+                        <label>Postal Code: </label>
+                        <input type="text" name="postal_code" id="postal_code" name="postalcode">
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <fieldset>
+               <legend><span>PROFILE INFORMATION</span></legend>
+               <table>
+                  <tr>
+                     <td>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="student_email" id="email">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="program">Program</label>
+                        <select id="program" name="Program">
+                           <option>-- Choose a program --</option>
+                           <option>Computer Systems Engineering</option>
+                           <option>Software Engineering</option>
+                           <option>Communications Engineering</option>
+                           <option>Biomedical and Electrical Engineering</option>
+                           <option>Electrical Engineering</option>
+                           <option>Special</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label>Choose Avatar</label><br>
+                        <input type="radio" name="avatar" class="avatar" value="img_avatar1.png" checked><img src="images/img_avatar1.png" alt="Avatar1" class="avatar-image">
+                        <input type="radio" name="avatar" class="avatar" value="img_avatar2.png"><img src="images/img_avatar2.png" alt="Avatar2" class="avatar-image">
+                        <input type="radio" name="avatar" class="avatar" value="img_avatar3.png"><img src="images/img_avatar3.png" alt="Avatar3" class="avatar-image">
+                        <input type="radio" name="avatar" class="avatar" value="img_avatar4.png"><img src="images/img_avatar4.png" alt="Avatar4" class="avatar-image">
+                        <input type="radio" name="avatar" class="avatar" value="img_avatar5.png"><img src="images/img_avatar5.png" alt="Avatar5" class="avatar-image">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input type = "submit" id="post_button" value="SUBMIT">
+                        <input type = "reset" id="reset_button" value="RESET">
+                        
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+         </form>
+      </section>
+      <div class="info-box">
+         <h2>Khooshav Bundhoo</h2>
+         <img id="avatar00" src="images/img_avatar3.png" alt="Avatar Image" title="Avatar">
+         <p> <strong>Email:</strong> <a href="khooshavbundhoo@cmail.carleton.ca">khooshavbundhoo@cmail.carleton.ca</a></p> <br>
+         <p><strong>Program:</strong> Software Engineering</p>
+      </div>
+   </main>
+</body>
+</html>
+
+
